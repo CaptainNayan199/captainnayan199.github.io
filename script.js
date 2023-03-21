@@ -13,7 +13,7 @@ const nav = document.querySelector(".nav"),
     totalSection = allSection.length;
 for (let i = 0; i<totalNavList; i++) 
      {
-    const a = navList[i].querySelector("a");
+    const a = navList[i].querySelector("a")
     a.addEventListener("click", function () 
     {
         removeBackSection();
@@ -24,13 +24,13 @@ for (let i = 0; i<totalNavList; i++)
                 addBackSection(j);
                 // allSection[j].classList.add("back-section");
             }
-            navList[j].querySelector("a").classList.remove("active");
+            navList[j].querySelector("a").classList.remove("active")
         }
         this.classList.add("active")
         showSection(this);
         if (window.innerWidth < 1200)
         {
-            asideSectionTogglerBtn();
+            asideSectionTogglerBtn()
         }
     })
 }
