@@ -1,4 +1,4 @@
-/*Typing  */
+/*typing design prototype  */
 var typed = new Typed(".typing", {
     strings: [" ","Student","Coder","Fella Umshayeli","Astrophile","Learner","Nycto-Lychno"],
     typeSpeed: 50,
