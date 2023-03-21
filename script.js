@@ -28,7 +28,7 @@ for (let i = 0; i<totalNavList; i++)
         }
         this.classList.add("active")
         showSection(this);
-        if (window.innerWidth < 1200) 
+        if (window.innerWidth < 1200)
         {
             asideSectionTogglerBtn();
         }
@@ -48,9 +48,9 @@ function addBackSection(num)
 function showSection(element) {
     for (let i = 0; i<totalSection; i++) 
     {
-        allSection[i].classList.remove("active");
+        allSection[i].classList.remove("active")
     }
-    const target = element.getAttribute("href").split("#")[1];
+    const target = element.getAttribute("href").split("#")[1]
     document.querySelector("#" + target).classList.add("active")
 }
 function updateNav(element)
