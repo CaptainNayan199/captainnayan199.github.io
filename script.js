@@ -61,7 +61,7 @@ function updateNav(element)
         const target = element.getAttribute("href").split("#")[1]
         if(target === navList[i].querySelector("a").getAttribute("href").split("#")[1])
         {
-            navList[i].querySelector("a").classList.add("active");
+            navList[i].querySelector("a").classList.add("active")
         }
     }
 }
@@ -72,13 +72,13 @@ document.querySelector(".hire-me").addEventListener("click", function()
      showSection(this)
      updateNav(this)
      removeBackSection()
-     addBackSection(sectionIndex);
+     addBackSection(sectionIndex)
 })
 const navTogglerBtn = document.querySelector(".nav-toggler"),
-    aside = document.querySelector(".aside");
+    aside = document.querySelector(".aside")
     navTogglerBtn.addEventListener("click", () => 
 {
-    asideSectionTogglerBtn();
+    asideSectionTogglerBtn()
 })
 function asideSectionTogglerBtn() 
 {
